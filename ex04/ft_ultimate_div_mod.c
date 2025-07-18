@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azaragoz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/18 13:59:17 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/18 14:04:21 by azaragoz         ###   ########.fr       */
+/*   Created: 2025/07/18 14:18:20 by azaragoz          #+#    #+#             */
+/*   Updated: 2025/07/18 14:24:24 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*div = a / b;
-	*mod = a % b;
+	int div;
+	int mod;
+
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
 }
 
 /*
@@ -21,11 +26,11 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 
 int main(void)
 {
-	int div;
-	int mod;
-
-	ft_div_mod(33, 6, &div, &mod);
-	printf("División: %d y Módulo: %d\n", div, mod);
+	int x = 54;
+	int y = 3;
+	printf("Antes: x = %d y = %d\n", x, y);
+	ft_ultimate_div_mod(&x, &y);
+	printf("Después: x = %d y = %d\n", x, y);
 	return (0);
 }
 */
