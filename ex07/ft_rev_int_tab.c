@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 12:32:24 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/20 12:54:03 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/20 12:56:59 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void    ft_rev_int_tab(int *tab, int size)
 
 int main(void)
 {
-    int tab[] = {'m', 'o', 'n', 't', 'a', 'r', 'a'};
+    int tab[] = {3, 2, 7, 5, 0, 4, 6};
     int size = 7;
     int i;
 
